@@ -56,12 +56,36 @@ const Navbar = () => {
       {/* Mobile menu */}
       <div className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#345983] flex flex-col justify-center items-center'}>
       <ul>
-            <li className='py-6 text-4xl'>Home</li>
-            <li className='py-6 text-4xl'>About</li>
-            <li className='py-6 text-4xl'>Skills</li>
-            <li className='py-6 text-4xl'>Projects</li>
-            <li className='py-6 text-4xl'>Experience</li>
-            <li className='py-6 text-4xl'>Contact</li>
+            <li className='py-6 text-4xl'>
+            <Link onClick={handleClick}  to='home' smooth={true} duration={500}>
+                Home
+              </Link>
+            </li>
+            <li className='py-6 text-4xl'>
+            <Link onClick={handleClick} to='about' smooth={true} duration={500}>
+                About
+              </Link>
+            </li>
+            <li className='py-6 text-4xl'>
+            <Link onClick={handleClick} to='skills' smooth={true} duration={500}>
+                Skills
+              </Link>
+            </li>
+            <li className='py-6 text-4xl'>
+            <Link onClick={handleClick} to='projects' smooth={true} duration={500}>
+                Projects
+              </Link>
+            </li>
+            <li className='py-6 text-4xl'>
+            <Link onClick={handleClick} to='experience' smooth={true} duration={500}>
+                Experience
+              </Link>
+            </li>
+            <li className='py-6 text-4xl'>
+            <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
+                Contact
+              </Link>
+            </li>
         </ul>
       </div>
       {/* social icons */}
@@ -83,7 +107,7 @@ const Navbar = () => {
                 </a>
             </li>
             <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#C03221]'>
-                <a className='flex justify-between items-center w-full text-gray-300' href='https://drive.google.com/file/d/1zWbfZq4at8uMtNLSSc1hLj9GMiuFPtwy/view?usp=sharing'>
+                <a className='flex justify-between items-center w-full text-gray-300' href='https://drive.google.com/file/d/1F-A3OpNZHLID10sjo1TgZ4OpW_6j17IK/view?usp=sharing'>
                     Resume <BsFillPersonLinesFill size={30} />
                 </a>
             </li>

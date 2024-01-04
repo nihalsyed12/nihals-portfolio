@@ -12,7 +12,7 @@ const Work = () => {
             <p className='py-6'>// Check out some of my recent projects</p>
             <ol>
                 <li>
-                    -Guerila is augmented reality street art, like pokemon go but with user generated content.
+                    -Guerila is social augmented reality street art IOS application, like pokemon go but with user generated content. In this demo I show how you can create a piece of art and place it anywhere in the world for others to see.
                 </li>
                 <li>-Graffitex is an augmented reality spray painting app, turning your phone into a spray can and allowing you to add graffiti anywhere you want</li>
                 <li>-Age and Gender predictor is able to predict your age and gender through your webcam with real time feedback</li>
@@ -29,7 +29,7 @@ const Work = () => {
                         Guerila
                     </span>
                     <div className='pt-8 text-center'>
-                        <a href='https://youtu.be/3J0eiC3deHA'>
+                        <a href='https://youtu.be/QmikKVkW8pc'>
                             <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
                         </a>
                         {/* <a href='/'>
