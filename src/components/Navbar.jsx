@@ -89,30 +89,32 @@ const Navbar = () => {
         </ul>
       </div>
       {/* social icons */}
-      <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
-        <ul>
-            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
+      <div className='flex fixed bottom-0 left-0 right-0 justify-center lg:top-[35%] lg:left-0 lg:flex-col lg:justify-start lg:items-start'>
+        <ul className='flex lg:flex-col bg-white rounded-t-lg lg:rounded-none lg:bg-transparent'>
+            <li className='w-[60px] h-[60px] lg:w-[160px] lg:h-[60px] flex justify-center items-center lg:justify-between lg:ml-[-100px] lg:hover:ml-[-10px] duration-300 bg-blue-600'>
                 <a className='flex justify-between items-center w-full text-gray-300' href='https://www.linkedin.com/in/nihalsyed/'>
-                    Linkedin <FaLinkedin size={30} />
+                <span className='hidden lg:block'>LinkedIn</span><FaLinkedin size={30} />
+                    
                 </a>
             </li>
-            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
+            <li className='w-[60px] h-[60px] lg:w-[160px] lg:h-[60px] flex justify-center items-center lg:justify-between lg:ml-[-100px] lg:hover:ml-[-10px] duration-300 bg-[#333333]'>
                 <a className='flex justify-between items-center w-full text-gray-300' href='https://github.com/nihalsyed12'>
-                    Github <FaGithub size={30} />
+                  <span className='hidden lg:block'>GitHub</span><FaGithub size={30} />
                 </a>
             </li>
-                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#8C6057]'>
+                <li className='w-[60px] h-[60px] lg:w-[160px] lg:h-[60px] flex justify-center items-center lg:justify-between lg:ml-[-100px] lg:hover:ml-[-10px] duration-300 bg-[#8C6057]'>
                 <a className='flex justify-between items-center w-full text-gray-300' href='mailto:syednihal4@gmail.com'>
-                    Email <HiOutlineMail size={30} />
+                <span className='hidden lg:block'>Email</span><HiOutlineMail size={30} />
                 </a>
             </li>
-            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#C03221]'>
+            <li className='w-[60px] h-[60px] lg:w-[160px] lg:h-[60px] flex justify-center items-center lg:justify-between lg:ml-[-100px] lg:hover:ml-[-10px] duration-300 bg-[#C03221]'>
                 <a className='flex justify-between items-center w-full text-gray-300' href='https://drive.google.com/file/d/1F-A3OpNZHLID10sjo1TgZ4OpW_6j17IK/view?usp=sharing'>
-                    Resume <BsFillPersonLinesFill size={30} />
+                <span className='hidden lg:block'>Resume</span><BsFillPersonLinesFill size={30} />
                 </a>
             </li>
         </ul>
       </div>
+
     </div>
   )
 }
